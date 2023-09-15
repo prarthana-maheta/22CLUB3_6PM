@@ -92,11 +92,10 @@ for x in range(0,11):
 #start,stop,increment
 # for x in range(2, 30, 3):
 #   print(x)
-
-Example 1: Print the first 10 natural numbers using for loop.
-Example 2: Python program to print all the even numbers within the given range.
-Example 3: Python program to calculate the sum of all numbers from 1 to a given number.
-
+#
+# Example 1: Print the first 10 natural numbers using for loop.
+# Example 2: Python program to print all the even numbers within the given range.
+# Example 3: Python program to calculate the sum of all numbers from 1 to a given number.
 
 
 
@@ -107,6 +106,8 @@ Example 3: Python program to calculate the sum of all numbers from 1 to a given 
 # Example 7: Python program that accepts a word from the user and reverses it.
 # Example 8: Python program to count the number of even and odd numbers from a series of numbers.
 # Example 9: Python program to find the factorial of a given number.
+
+
 
 
 
@@ -160,60 +161,63 @@ Example 3: Python program to calculate the sum of all numbers from 1 to a given 
 # print(sum)
 
 
+
 ###############4##############
 
-# # if the given range is 10
-# given_range = 10
-#
-# # set up a variable to store the sum
-# # with initial value of 0
-# sum = 0
-#
-# for i in range(given_range):
-#
-#     # if i is odd, add it
-#     # to the sum variable
-#     if i % 2 != 0:
-#         sum += i
-#
-# # print the total sum at the end
-# print(sum)
+# if the given range is 10
+given_range = 10
+
+# set up a variable to store the sum
+# with initial value of 0
+sum = 0
+
+for i in range(0,given_range+1):
+
+    # if i is odd, add it
+    # to the sum variable
+    if i % 2 != 0:
+        # sum=sum+i
+        sum += i
+
+# print the total sum at the end
+print(sum)
 
 
 ################5#####################
 
 
-# # if the given range is 10
-# given_number = input()
-#
-# for i in range(11):
-#     print(f"{given_number}x{i}=",given_number * i)
+# if the given range is 10
+given_number = input()
+
+for i in range(11):
+    print(given_number,"X",i,"=",given_range*i)
+    print(f"{given_number}x{i}={given_number * i}")
 
 
 ####################6#####################
 
-#
-# # if the given number is 129475
-# given_number = 12345
-# # for i in given_number:
-# #     print(i)
-# # # since we cannot iterate over an integer
-# # # in python, we need to convert the
-# # # integer into string first using the
-# # # str() function
-# given_number = str(given_number)
-# #
-# # # declare a variable to store
-# # # the count of digits in the
-# # # given number with value 0
-# count = 0
-# #
+
+# if the given number is 129475
+given_number = 12345
 # for i in given_number:
-#     if i.isdigit():
-#         count += 1
-# #
-# # # print the total count at the end
-# print(count)
+#     print(i)
+# # since we cannot iterate over an integer
+# # in python, we need to convert the
+# # integer into string first using the
+# # str() function
+given_number = str(given_number)
+#
+# # declare a variable to store
+# # the count of digits in the
+# # given number with value 0
+count = 0
+#
+for i in given_number:
+    if i.isdigit():
+        count += 1
+#
+# # print the total count at the end
+print(count)
 
 
 
@@ -225,67 +229,71 @@ Example 3: Python program to calculate the sum of all numbers from 1 to a given 
 
 #######################7#################
 
-# # input string from user
-# given_string = input()
-# print(given_string[::-1])
-#
-# # an empty string variable to store
-# # the given string in reverse
-# reverse_string = ""
-#
-# # iterate through the given string
-# # and append each element of the given string
-# # to the reverse_string variable
-# for i in given_string:
-#     reverse_string = i + reverse_string
-#
-# # print the reverse_string variable
-# print(reverse_string)
+# input string from user
+given_string = input()
+print(given_string[::-1])
+
+# an empty string variable to store
+# the given string in reverse
+reverse_string = "cba"
+# abc
+# iterate through the given string
+# and append each element of the given string
+# to the reverse_string variable
+for i in given_string:
+    reverse_string = i + reverse_string
+
+# print the reverse_string variable
+print(reverse_string)
+
+
+list(given_number.reversed)
+reverse()
 
 
 
 
 #################10##################
 
-# given list of numbers
+given list of numbers
 # num_list = list(input())
 # print(type(num_list))
 # print(num_list)
 # iterate through the list elemets
 # using for loop
-# e=0
-# o=0
-# for i in num_list:
-#
-#     # if divided by 2, all even
-#     # number leave a remainder of 0
-#     if i % 2 == 0:
-#         e+=1
-#         print(i, "is an even number.")
-#
-#     # if remainder is not zero
-#     # then it's an odd number
-#     else:
-#         o+=1
-#         print(i, "is an odd number.")
-#
-# print(o,e)
+e=0
+o=0
+for i in num_list:
+
+    # if divided by 2, all even
+    # number leave a remainder of 0
+    if i % 2 == 0:
+        e+=1
+        print(i, "is an even number.")
+
+    # if remainder is not zero
+    # then it's an odd number
+    else:
+        o+=1
+        print(i, "is an odd number.")
+
+print(o,e)
 
 
 ######################9#################
 
 
-# # given number
-# given_number = 5
-#
-# # since 1 is a factor
-# # of all number
-# # set the factorial to 1
-# factorial = 1
-#
-# # iterate till the given number
-# for i in range(1, given_number + 1):
-#     factorial = factorial * i
-#     print(factorial)
-#
-# print("The factorial of ", given_number, " is ", factorial)
+# given number
+given_number = 5
+
+# since 1 is a factor
+# of all number
+# set the factorial to 1
+factorial = 1
+126
+# iterate till the given number
+for i in range(1, given_number + 1):
+    factorial = factorial * i
+    print(factorial)
+
+print("The factorial of ", given_number, " is ", factorial)
