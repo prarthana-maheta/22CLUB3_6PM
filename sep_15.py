@@ -1,6 +1,6 @@
-
-
-thistuple = ("apple", "banana", "cherry")
+#
+#
+# thistuple = ("apple", "banana", "cherry")
 # print(thistuple)
 
 
@@ -16,36 +16,42 @@ thistuple = ("apple", "banana", "cherry")
 # print(type(thistuple))
 # print(len(thistuple))
 #
-thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-# tuple(thistuple)
-# print(thistuple[2:5:-1])
-print(thistuple[-5:-2:-1])
+# thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+# # tuple(thistuple)
+# # print(thistuple[2:5:-1])
+# print(thistuple[-5:-2:-1])
 
 # check if present
-# thistuple = ("apple", "cherry", "apple")
-# if "apple" in thistuple:
-#     print("Yes, 'apple' is in the fruits tuple")
-# if "cherry" in thistuple:
-#     print("yes, 'cherry' in ")
-
+thistuple = ("apple", "cherry", "apple")
+if "apple" in thistuple:
+    print("Yes, 'apple' is in the fruits tuple")
+if "ch" in thistuple:
+    print("yes, 'cherry' in ")
+elif "ple" in thistuple:
+    print("NO")
+else:
+    print("2345")
 
 
 
 
 # change tuple value update tuple
 #
-# x = ("apple", "banana", "cherry")
-# y = list(x)
+x = ("apple", "banana", "cherry")
+y = list(x)
+# x[0]="sbc"
+# print(x)
 # print(y)
-# # y=[x]
-# # print(y)
-# #
+# y=[x]
+# print(y)
+#
+# # #
 # y.insert(0,"kiwi")
-# # y[0] = "kiwi"
-# #
+# y[0] = "kiwi"
+# # #
 # print(y)
 # x = tuple(y)
-# #
+# # #
 # print(x)
 
 
@@ -55,8 +61,8 @@ y = list(thistuple)
 y.append("orange")
 thistuple = tuple(y)
 print(thistuple)
-
-
+#
+#
 thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.remove("apple")
@@ -65,20 +71,21 @@ thistuple = tuple(y)
 
 
 # # unpack tuple
-# fruits = ("apple", "banana", "cherry")
-#
-# (green, yellow, red) = fruits
-#
-# print(green)
-# print(yellow)
-# print(red)
+fruits = ("apple", "banana", "cherry")
 
-
-fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
-
-(green, yellow, *red) = fruits
+(green, yellow, red) = fruits
 
 print(green)
 print(yellow)
 print(red)
 
+
+fruits = ("apple", "apple", "cherry", "strawberry", "raspberry")
+
+# (a,*red) = fruits
+#
+# print(green)
+# print(yellow)
+# print(red)
+
+print(fruits.count("apple"))
