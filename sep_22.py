@@ -257,17 +257,85 @@ num3 = 52
 # print("3rd Number =", num3)
 # print("Largest Number =", largest_number)
 
+#
+# example1: iterate to any set s1={} print(each element)
+# example2: even odd check
+# example3: pallindrome checking yes or no?
+# example4: one output with common element second with not common elements
+#
+#
+#
+#
+#
+# s1={"mam","122"}
+# for i in s1:
+#     if i == i[::-1]:
+#         print(f"{i} is pallindrome")
 
-example1: iterate to any set s1={} print(each elem  ent)
-example2: even odd check
-example3: pallindrome checking yes or no?
-example4: one output with common element second with not common elements
 
 
 
 
 
-s1={"mam","122"}
-for i in s1:
-    if i == i[::-1]:
-        print(f"{i} is pallindrome")
+
+
+
+
+
+
+
+# 1) remove repeating items from list [None,1,None,1,None]===[None,1]
+#
+# 2) remove ony None values or empty values from list--None, ""[None,1,None,1,""]==[1,1]
+#
+# 3) add multiple items to tuple
+#
+# 4) find factorial of the elements in the list
+# # [1,5,3,6,7]
+#
+# 5) check whether elements in the list are pallindrome or not ["mam","ram","121","33"]
+#
+#
+# 1) ans
+# li1=[None,1,None,1,None]
+# new=[]
+# for i in range(len(li1)):
+#     for j in range(len(li1)):
+#         if li1[i] != li1[j] and li1[j] not in new:
+#             new.append(li1[j])
+# print(new)
+#
+# for i in li1:
+#     if i not in new:
+#         new.append(i)
+# print(new)
+
+
+# 2)ans
+# l1=[None,1,None,1,""]
+# new=[]
+# for i in l1:
+#     if i != None and i != "":
+#         new.append(i)
+
+# 3) ans
+
+# t1=(1,2,3)
+# l1=[4,5,6]
+#
+# t1=list(t1)
+# l2=t1.extend(l1)
+# print(l2)
+
+# 4)
+l1 = [1,5,3,6,7]
+# fact = 1
+# for x in l1:
+#     fact*=x
+# print(fact)
+
+# 4) using lambda
+# fact=1
+# ans=lambda fact : [fact*x  for x in l1]
+# print(ans(fact))
+
