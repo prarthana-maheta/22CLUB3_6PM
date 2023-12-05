@@ -76,6 +76,7 @@
 # # The self parameter is a reference to the current instance of the class,
 # # and is used to access variables that belongs to the class.
 #
+# def fun1()
 class Person:
 
   def __init__(self, name,height, age):
@@ -117,36 +118,38 @@ p1.myfunc(78)
 # # as a function; if this method is defined, x(arg1, arg2, ...) is a shorthand for x.__call__(arg1, arg2, ...).
 #
 #
-# # class Example:
-# #     def __init__(self):
-# #         print("Instance Created")
-# #
-# #     # Defining __call__ method
-# #     def __call__(self):
-# #         print("Instance is called via special method")
-# #
-# #
-# # # Instance created
-# # e = Example()
-# #
-# # # __call__ method will be called
-# # e()
+class Example:
+    def __init__(self):
+        print("Instance Created")
+
+    # Defining __call__ method
+    def __call__(self):
+        print("Instance is called via special method")
+
+
+# Instance created
+e = Example()
+
+# __call__ method will be called__call__
+e()
+
 #
 #
-# # class Product:
-# #     def __init__(self):
-# #         print("Instance Created")
-# #
-# #     # Defining __call__ method
-# #     def __call__(self, a, b):
-# #         print(a * b)
-# #
-# #
-# # # Instance created
-# # ans = Product()
-# #
-# # # __call__ method will be called
-# # ans(10, 20)
+# class Product:
+#     def __init__(self):
+#         print("Instance Created")
+#
+#     # Defining __call__ method
+#     def __call__(self, a, b):
+#         print(a * b)
+#     def mutiply(self):
+#
+# # Instance created
+# ans = Product()
+#
+# # __call__ method will be called
+# ans(10, 20)
+# ans.mutipl()
 #
 #
 # # The __str__() Function
@@ -154,19 +157,25 @@ p1.myfunc(78)
 #
 # # The string representation of an object WITHOUT the __str__() function:
 # #
-# # class Person:
-# #   def __init__(self, name, age):
-# #     self.name = name
-# #     self.age = age
-# #
-# # p1 = Person("John", 36)
-# #
-# # print(p1)
+class Person:
+      def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+      def __str__(self):
+          # print(self.name,self.age)
+          return f"{self.name}, {self.age}"
+
+p1 = Person("John", 36)
+
+print(p1)
+
 #
 # # The string representation of an object WITH the __str__() function:
 # #
 # # class Person:
 # #   def __init__(self, name, age):
+
 # #     self.name = name
 # #     self.age = age
 # #
@@ -186,6 +195,11 @@ p1.myfunc(78)
 #         print('sum = ',self.sum)
 #
 # a = MyClass
-# # a.Sum(5)
+# # a.Sum(5)1
 # # a.display()
 # a.sum_num(5)
+
+
+1 create a class student that will take the attendance uisng attendance method,
+attendance should be stored in dictionary with student name
+2 attendance sheet method will display the dictionary
